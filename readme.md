@@ -1,42 +1,29 @@
-NullifyX – Secure Data Wiping Tool
+# NullifyX – Secure Data Wiping Tool  
 
-🔑Generate Private Key:
-`openssl genpkey -algorithm RSA -out private.pem -aes256`
+NullifyX is a secure data sanitization tool developed as part of the **Smart India Hackathon (SIH)**.  
+It permanently erases files or storage targets using overwrite techniques and generates verification certificates of the wipe process.
 
-🔓 Extract Public Key
-`openssl rsa -in private.pem -pubout -out public.pem`
+## Features
+- Secure file/device wiping using overwrite methods  
+- GUI-based interface for easy operation  
+- Certificate generation (JSON/PDF) after wiping  
+- Verification script to confirm wipe authenticity  
+- Designed for reliable and irreversible data removal  
 
-📌 Prerequisites
-Before running the tool, make sure you have:
-Windows 10/11 with WSL enabled
-Install WSL
- and set up Ubuntu (or any Linux distro).
-Python 3.11+ installed inside WSL
-`python3 --version`
+## Tech Stack
+- Python  
+- Tkinter (GUI)  
+- File handling & security concepts  
+- JSON/PDF certificate generation  
 
+## My Contribution
+- Contributed to system logic, GUI flow, and testing  
+- Worked on reliable data sanitization workflow  
+- Helped implement verification and certificate features  
 
-Git installed
-`sudo apt update && sudo apt install git -y`
+## How to Run
 
-⚙️ Setup Instructions
-Open WSL and navigate to the project folder
-Example (replace with your username if different):
-`cd "/mnt/c/Users/Yash Bavkar/Documents/GitHub/NullifyX"`
-
-Create a virtual environment
-`python3 -m venv venv`
-
-Activate the virtual environment
-`source venv/bin/activate`
-
-
-Install required dependencies
-`pip install -r requirements.txt`
-
-▶️ Running the Application
-Once the environment is ready:
-`python gui_app.py`
-
-
-This will launch the NullifyX GUI inside WSL.
-Use it to select a device, choose a wipe method, and generate JSON/PDF certificates of the operation.
+1. Clone the repository  
+```bash
+git clone https://github.com/AryaG09/NullifyX.git
+cd NullifyX
